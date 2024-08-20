@@ -4,7 +4,7 @@
     {
         public void PracticeMethod()
         {
-            //Bad practice
+            //Good practice
         }
     }
 }
