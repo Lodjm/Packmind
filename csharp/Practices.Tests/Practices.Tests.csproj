@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pratices\Pratices.csproj" />
+    <ProjectReference Include="..\Practices\Practices.csproj" />
   </ItemGroup>
 
   <ItemGroup>
