@@ -4,11 +4,8 @@
     {
         private List<Order> _orders = new();
 
-        public void AddOrders(List<Order> orders)
+        public void AddOrders(OrderCollection orders)
         {
-            if (orders == null)
-                return;
-
             _orders.AddRange(orders);
         }
     }
