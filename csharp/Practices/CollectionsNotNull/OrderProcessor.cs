@@ -6,9 +6,6 @@
 
         public void AddOrders(List<Order> orders)
         {
-            if (orders == null)
-                return;
-
             _orders.AddRange(orders);
         }
     }
