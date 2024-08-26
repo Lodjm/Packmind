@@ -4,21 +4,17 @@
     {
         public void ProcessOrder(Order order)
         {
-            if (order != null)
+            //Throw ArgumentNullException if null
+            //You can use a if clause with Throw new ArgumentNullException
+            ArgumentNullException.ThrowIfNull(order);
+
+            if (!order.IsValid())
             {
-                if (order.IsValid())
-                {
-                    // process order
-                }
-                else
-                {
-                    // handle invalid order
-                }
+                //Handle invalid Order
+                //And fast return
+                return;
             }
-            else
-            {
-                // handle null order
-            }
+            //Process Order
         }
     }
 }
