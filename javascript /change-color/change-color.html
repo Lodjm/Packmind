@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+    <script>
+        function changeMyTextColor() {
+            let div = document.getElementById("my-text");
+            div.style.color = "pink";
+        }
+    </script>
+</head>
+<body>
+    <div id="my-text" class="red">My text</div>
+    <button onclick="changeMyTextColor()" type="submit">Change my color</button>
+</html>
