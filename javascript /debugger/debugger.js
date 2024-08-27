@@ -1,6 +1,5 @@
 function calculateSum(a, b) {
     let sum = a + b;
-    debugger;
     return sum;
 }
 
