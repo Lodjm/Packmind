@@ -32,8 +32,6 @@ class LibraryTest {
         .openStatelessSession();
 
     library.authors = new AuthorsRepository_(statelessSession);
-    library.books = new BooksRepository_(statelessSession);
-    library.bookAuthors = new BookAuthorsRepository_(statelessSession);
   }
 
   @AfterEach
@@ -69,7 +67,6 @@ class LibraryTest {
     hibernateConfig.setProperty("hibernate.show_sql", true);
     hibernateConfig.addAnnotatedClass(Author.class);
     hibernateConfig.addAnnotatedClass(Book.class);
-    hibernateConfig.addAnnotatedClass(BookAuthor.class);
     return hibernateConfig;
   }
 
