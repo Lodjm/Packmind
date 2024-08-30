@@ -4,6 +4,6 @@ const person = {
     gender: "abc"
 }
 
-delete person.gender
+const {gender, ...newPerson} = person
 
-console.log(person); // { firstName: 'John', lastName: 'Test' }
+console.log(newPerson) // { firstName: 'John', lastName: 'Test'  }
