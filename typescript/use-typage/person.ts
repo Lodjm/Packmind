@@ -1,6 +1,10 @@
+const getObjectKeys = <TObj extends {}>(
+    obj: TObj
+) =>  Object.keys(obj) as Array<keyof TObj>
+
 let person = {
     name: 'John',
     age: 30
 };
 
-const weakTypingResult = Object.keys(person) // typeof result2: string[]
+const strongTypingResult = getObjectKeys(person); // typeof result: ("name" | "age")[]
