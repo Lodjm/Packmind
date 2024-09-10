@@ -6,9 +6,5 @@ const FRUITS = {
 }
 
 function isAppleOrBanana(fruit) {
-    if(fruit === FRUITS.apple || fruit === FRUITS.banana) {
-        return true;
-    }
-
-    return false;
+    return fruit === FRUITS.apple || fruit === FRUITS.banana;
 }
