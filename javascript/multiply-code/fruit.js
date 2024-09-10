@@ -1,12 +1,12 @@
 const FRUITS = {
     apple: 'Apple',
-    banane: 'Banana',
+    banana: 'Banana',
     cherry: 'Cherry',
     orange: 'Orange'
 }
 
 function isAppleOrBanana(fruit) {
-    if(fruit === 'Apple' || fruit === 'Banana') {
+    if(fruit === FRUITS.apple || fruit === FRUITS.banana) {
         return true;
     }
 
