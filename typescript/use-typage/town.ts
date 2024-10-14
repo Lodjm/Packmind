@@ -10,6 +10,7 @@ function getCountryFromTown(town: Town): string {
         case 'Rome':
             return 'Italy'
         default:
+            const townLocation: never = town;
             throw new Error(`${town} is unknown`)
     }
 
