@@ -1,5 +1,6 @@
+type NotEmptyString<T extends string> = T extends '' ? never : T;
 
-function getNumberLetterOfName(myName: string) {
+function getNumberCharOfName<T extends string>(myName: NotEmptyString<T>) {
     if (myName.length === 0) {
         throw new Error("Name can't be empty");
     }
@@ -7,4 +8,4 @@ function getNumberLetterOfName(myName: string) {
     //...
 }
 
-getNumberLetterOfName('')
+getNumberCharOfName('') // Generate an error because empty string is never type
